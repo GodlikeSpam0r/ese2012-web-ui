@@ -1,0 +1,10 @@
+!!! 5
+%head
+  %title
+    Trade
+%body
+  %aside
+    #user
+      - if session[:user]
+        %a(href = "/logout") logout
+  = yield

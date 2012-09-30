@@ -1,0 +1,15 @@
+%h1 User #{user.name}
+
+%table
+  %tr
+    %th Name
+    %th Price
+    %th Active
+  - for item in user.items
+    %tr
+      %td #{item.name}
+      %td #{item.price}
+      - if(item.active)
+        %td yes
+      - else
+        %td no
