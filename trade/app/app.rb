@@ -22,6 +22,12 @@ class App < Sinatra::Base
 
     user.items[0].active = true
     user.items[1].active = true
+
+    user2 = Models::User.named("ese")
+    user2.add_item("Item4", 5)
+    user2.add_item("Item5", 100)
+
+    user2.items[0].active = true
   end
 
 

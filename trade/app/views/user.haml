@@ -1,11 +1,14 @@
 %h1 User #{user.name}
-
 %table
   %tr
     %th Name
     %th Price
     %th Active
   - for item in user.items
+    - if item.active
+      - type = 'active'
+    - else
+      - type = 'inactive'
     %tr
       %td #{item.name}
       %td #{item.price}

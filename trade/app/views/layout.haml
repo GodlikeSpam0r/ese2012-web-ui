@@ -2,9 +2,16 @@
 %head
   %title
     Trade
+  %link(rel="stylesheet" type="text/css" href="style.css")
 %body
-  %aside
-    #user
+  #page
+    #menu
+      #head_entry
+        %h2 Navigation
       - if session[:name]
-        %a(href = "/logout") logout
-  = yield
+        #menu_entry
+          %a(href ="/user/#{session[:name]}") Your profile
+        #menu_entry
+          %a(href = "/logout") Logout
+    #content
+      = yield
