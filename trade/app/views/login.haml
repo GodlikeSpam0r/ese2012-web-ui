@@ -1,8 +1,19 @@
-%form(action = "/login" method="POST")
-  %label
-    Name:
-    %input(type='text' name = 'username' value='User')
-    </br>Password:
-    %input(type='password' name = 'password' value='')
-    </br>
-  %input(type='submit' value= 'Login')
+-if(error = "empty")
+  %div
+    Empty username or password
+-if(error = "wrong")
+  %div
+    Wrong login
+
+%div
+  %h1 Login
+  %form( action="/login" method="POST" )
+    %label
+      Username
+      %input(type="text" name="username")
+    %label
+      %br
+      Password
+      %input(type="password" name="password")
+      %br
+    %input(type="submit" text="submit" value="Login")

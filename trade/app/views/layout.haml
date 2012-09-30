@@ -5,6 +5,6 @@
 %body
   %aside
     #user
-      - if session[:user]
+      - if session[:name]
         %a(href = "/logout") logout
   = yield
