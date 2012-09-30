@@ -4,7 +4,7 @@ require './models/user'
 
 class Main  < Sinatra::Application
   before do
-     @user = Models::User.by_name(session[:name])
+     @active_user = Models::User.by_name(session[:name])
   end
   get "/" do
     redirect '/login' unless session[:name]
@@ -19,7 +19,7 @@ class Main  < Sinatra::Application
   get "/buy/:owner/:item" do
     owner = Models::User.by_name(params[:owner])
     item = Models::Item.by_name(params[:item])
-    user.buy(owner, item)
+    @active_user.buy(owner, item)
     redirect '/'
   end
 end

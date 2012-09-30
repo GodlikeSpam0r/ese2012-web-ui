@@ -15,17 +15,15 @@ class Authentication < Sinatra::Application
     password = params[:password]
 
 
-    if (name="" or password="")
-      redirect '/login/empty'
-    else
-      user = Models::User.by_name name
-      if (user.nil? or password != name)
+
+      user = Models::User.by_name(name)
+      if user.nil? || password != name
         redirect '/login/wrong'
       else
         session[:name] = name
         redirect '/'
       end
-    end
+
   end
 
   get "/logout" do

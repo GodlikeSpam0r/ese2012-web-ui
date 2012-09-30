@@ -1,10 +1,6 @@
--if(error = "empty")
-  %div
-    Empty username or password
--if(error = "wrong")
+-if error == "wrong"
   %div
     Wrong login
-
 %div
   %h1 Login
   %form( action="/login" method="POST" )
@@ -16,4 +12,4 @@
       Password
       %input(type="password" name="password")
       %br
-    %input(type="submit" text="submit" value="Login")
+    %input(type="submit" text="submit")

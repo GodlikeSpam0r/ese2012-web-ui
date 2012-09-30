@@ -8,11 +8,7 @@ module Models
     end
 
     def self.by_name(name)
-      for item in @@items
-        if(item.name = name)
-          return item
-        end
-      end
+      @@items.detect {|item| item.name == name }
     end
 
     def self.named(name, price, owner)

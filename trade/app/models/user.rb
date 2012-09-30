@@ -4,11 +4,7 @@ module Models
     attr_accessor :name, :credits, :items
 
     def self.by_name(name)
-      for user in @@users
-        if(user.name = name)
-          return user
-        end
-      end
+      @@users.detect {|user| user.name == name }
     end
 
     def self.all
