@@ -6,11 +6,12 @@
     %th Owner
     %th Buy
   - for item in items
-    - if(item.active)
+    - if item.active
       %tr
         %td #{item.name}
-        %td #{item.price}
-        %td
+        %td.right #{item.price}
+        %td.right
           %a(href='user/#{item.owner}')#{item.owner}
-        %td
-          %a(href='buy/#{item.owner}/#{item.name}')Buy
+        - if item.owner.name != current_name
+          %td.right
+            %a(href='buy/#{item.owner}/#{item.name}')Buy

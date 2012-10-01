@@ -30,6 +30,7 @@ module Models
     def add_item (name, price)
       item = Item.named(name, price, self)
       self.items.push(item)
+      item
     end
 
     def del_item(item)

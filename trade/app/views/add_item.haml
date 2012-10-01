@@ -1,0 +1,19 @@
+%h1 Add Item
+%form( action="/additem" method="POST" )
+  %table
+    %tr
+      %td
+        %label
+          Name:
+      %td
+        %label
+          Price:
+    %tr
+      %td
+        %input(type="text" name="name")
+      %td
+        %input(type="text" name="price")
+    %tr
+      %td
+      %td
+        %input(type="submit" text="submit")

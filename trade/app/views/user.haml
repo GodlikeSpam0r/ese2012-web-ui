@@ -16,5 +16,11 @@
         %td #{item.price}
         - if item.active
           %td yes
+          -if user.name==session[:name]
+            %td
+              %a{:href => url("/#{item.name}/deactivate")}  Deactivate
         - else
           %td no
+          -if user.name==session[:name]
+            %td
+              %a{:href => url("/#{item.name}/activate")}  Activate
