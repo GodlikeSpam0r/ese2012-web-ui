@@ -1,18 +1,20 @@
-%h1 User #{user.name}
-%table
-  %tr
-    %th Name
-    %th Price
-    %th Active
-  - for item in user.items
-    - if item.active
-      - type = 'active'
-    - else
-      - type = 'inactive'
+- if !user.nil?
+  %h1 User #{user.name}
+  Credits: #{user.credits}
+  %table
     %tr
-      %td #{item.name}
-      %td #{item.price}
-      - if(item.active)
-        %td yes
+      %th Name
+      %th Price
+      %th Active
+    - for item in user.items
+      - if item.active
+        - type = 'active'
       - else
-        %td no
+        - type = 'inactive'
+      %tr{:id => "#{type}"}
+        %td #{item.name}
+        %td #{item.price}
+        - if item.active
+          %td yes
+        - else
+          %td no

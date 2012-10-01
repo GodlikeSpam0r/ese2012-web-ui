@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/reloader'
 require 'haml'
 require 'controllers/main'
 require 'controllers/authentication'

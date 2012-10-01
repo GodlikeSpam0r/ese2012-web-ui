@@ -35,6 +35,7 @@ module Models
     def del_item(item)
       if (self.items.include? item)
         self.items.delete(item)
+        Models::Item.delete_item(item)
       end
     end
 

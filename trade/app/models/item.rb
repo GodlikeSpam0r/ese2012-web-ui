@@ -11,6 +11,10 @@ module Models
       @@items.detect {|item| item.name == name }
     end
 
+    def self.delete_item(item)
+      @@items.delete(item)
+    end
+
     def self.named(name, price, owner)
       item = self.new(price, owner)
       item.name = name

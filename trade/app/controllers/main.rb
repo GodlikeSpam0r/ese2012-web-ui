@@ -23,6 +23,7 @@ class Main  < Sinatra::Application
     owner = Models::User.by_name(params[:owner])
     item = Models::Item.by_name(params[:item])
     @active_user.buy(owner, item)
+
     redirect '/'
   end
 
