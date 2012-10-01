@@ -1,78 +1,91 @@
-body{
-    background-image: url(bg_body.png);
-    background-repeat: repeat;
-    font-family: Calibri, Verdana;
+body {
+    background: url(bg_body.png) repeat;
+    font-family: Calibri, Verdana, sans-serif;
 }
 
-#content{
+#content {
     padding: 15px;
     position: relative;
     float: left;
-    left:165px;
+    left: 170px;
 }
 
-#inactive{
+#inactive {
     color: #aaa;
 }
 
-th{
+th {
     text-align: left;
 }
 
-.right{
+#error{
+   background: #f66;
+    border: solid 1px #000;
+}
+
+#success{
+    background: #8e8;
+    border: solid 1px #000;
+}
+
+.right {
     text-align: right;
 }
 
-#body{
-    margin-left: auto ;
-    margin-right: auto ;
+#body {
+    margin-left: auto;
+    margin-right: auto;
     width: 800px;
     position: relative;
 }
 
-#logo{
-   margin-top:10px;
-    margin-bottom:10px;
+#logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#page{
+#page {
     background-color: #FFF;
     min-height: 500px;
 }
 
-#head_entry{
-    position:relative;
+#head_entry {
+    position: relative;
     padding: 1px;
+    margin-top: 20px;
+    vertical-align: bottom;
 }
 
-#menu{
-    marping-top: 5px;
-    padding-top: 9px;
+#menu {
+    margin-top: 20px;
+    margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    position:absolute;
-    left:0%;
-    float:left;
+    position: absolute;
+    left: 0;
+    float: left;
     width: 150px;
-    border-right:1px solid #aaa;
-    height:80%
+    border-right: 1px solid #23496B;;
+    min-height: 470px;
 }
 
-#menu_entry{
-    position:relative;
-    border-top:1px dashed #aaa;
+#menu_entry {
+    position: relative;
+    border-top: 1px dashed #aaa;
     padding: 1px;
-    background-color: #eee;
+    background-color: #fcfefe;
 }
 
-a, a.visited{
-    color:#000;
+a, a.visited {
+    color: #23496B;
+    text-decoration: none;
 }
 
-a:hover{
-    color:#aaa;
+a:hover {
+    color: #aaa;
 }
 
-h2{
-    color: #444;
+h2 {
+    color: #23496B;
+    margin: 0px;
 }

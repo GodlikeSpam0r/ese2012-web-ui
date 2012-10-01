@@ -48,10 +48,10 @@ module Models
           self.add_item(item.name, item.price)
           owner.del_item(item)
         else
-          puts("Not enough credits!\n")
+          return "credit error"
         end
       else
-        puts("Invalid item!\n")
+        return "item error"
       end
 
     end

@@ -12,7 +12,7 @@ class App < Sinatra::Base
   use Main
 
   enable :sessions
-  disable :show_exceptions
+  set :show_exceptions, false
   set :public_folder, 'app/public'
 
   configure :development do
@@ -35,5 +35,4 @@ class App < Sinatra::Base
 
 end
 
-# Now, run it
 App.run!

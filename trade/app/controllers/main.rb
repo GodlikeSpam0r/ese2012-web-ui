@@ -8,8 +8,12 @@ class Main  < Sinatra::Application
   end
 
   get "/" do
+    redirect "/index"
+  end
+
+  get "/index" do
     redirect '/login' unless session[:name]
-    haml :index, :locals => {:current_name => session[:name], :items => Models::Item.all }
+    haml :index, :locals => {:current_name => session[:name], :items => Models::Item.all, :error => nil }
   end
 
   get "/user/:name" do
@@ -22,9 +26,16 @@ class Main  < Sinatra::Application
     redirect '/login' unless session[:name]
     owner = Models::User.by_name(params[:owner])
     item = Models::Item.by_name(params[:item])
-    @active_user.buy(owner, item)
+    if @active_user.buy(owner, item) == "credit error"
+      redirect "/index/credit"
+    end
 
-    redirect '/'
+    redirect '/index'
+  end
+
+  get "/index/:error" do
+    redirect '/login' unless session[:name]
+    haml :index, :locals => {:current_name => session[:name], :items => Models::Item.all, :error => params[:error] }
   end
 
   get "/:item/activate" do
@@ -43,13 +54,28 @@ class Main  < Sinatra::Application
 
   get "/additem" do
     redirect '/login' unless session[:name]
-     haml :add_item
+     haml :add_item, :locals=>{:message => nil}
   end
 
   post "/additem" do
     redirect '/login' unless session[:name]
-    @active_user.add_item(params[:name], params[:price])
-    redirect "/additem"
+    name = params[:name]
+    price = params[:price]
+
+    if Integer(price) < 0
+      redirect "/additem/negative_price"
+    end
+
+    if Models::Item.by_name(name) != nil
+      redirect "/additem/invalid_item"
+    end
+
+    @active_user.add_item(name, price)
+    redirect "/additem/success"
+  end
+
+  get "/additem/:message" do
+    haml :add_item, :locals=>{:message => params[:message]}
   end
 
   get "/register" do

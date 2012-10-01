@@ -25,6 +25,8 @@
             %a{:href => url("/logout")} Logout
         - else
           #menu_entry
+            %a{:href => url("/login")} Login
+          #menu_entry
             %a{:href => url("/register")} Register
       #content
         = yield

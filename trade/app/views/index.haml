@@ -1,3 +1,6 @@
+-if error == "credit"
+  #error
+    Not enough credits
 %h1 Hello #{current_name}
 %table
   %tr
@@ -11,7 +14,7 @@
         %td #{item.name}
         %td.right #{item.price}
         %td.right
-          %a(href='user/#{item.owner}')#{item.owner}
+          %a(href='/user/#{item.owner}')#{item.owner}
         - if item.owner.name != current_name
           %td.right
-            %a(href='buy/#{item.owner}/#{item.name}')Buy
+            %a(href='/buy/#{item.owner}/#{item.name}')Buy
