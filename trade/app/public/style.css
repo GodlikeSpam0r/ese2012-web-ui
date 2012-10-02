@@ -53,6 +53,7 @@ th {
 #page {
     background-color: #FFF;
     min-height: 500px;
+    overflow: auto;
 }
 
 #head_entry {
