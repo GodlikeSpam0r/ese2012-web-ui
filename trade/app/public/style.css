@@ -18,12 +18,18 @@ th {
     text-align: left;
 }
 
+.list{
+    border-top: dashed 1px #ccc;
+}
+
 #error{
+    margin-top: 5px;
    background: #f66;
     border: solid 1px #000;
 }
 
 #success{
+    margin-top: 55px;
     background: #8e8;
     border: solid 1px #000;
 }
@@ -88,4 +94,18 @@ a:hover {
 h2 {
     color: #23496B;
     margin: 0px;
+}
+
+#button{
+    background: none;
+    border: none;
+    color: #23496B;
+}
+
+#button:hover{
+    color: #aaa;
+}
+
+.center{
+    text-align: center;
 }

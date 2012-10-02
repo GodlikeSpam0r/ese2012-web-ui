@@ -22,14 +22,14 @@ class Main  < Sinatra::Application
     haml :user, :locals =>{:user => user}
   end
 
-  get "/buy/:owner/:item" do
+  post "/buy/:item" do
     redirect '/login' unless session[:name]
-    owner = Models::User.by_name(params[:owner])
     item = Models::Item.by_name(params[:item])
+    owner = item.owner
+
     if @active_user.buy(owner, item) == "credit error"
       redirect "/index/credit"
     end
-
     redirect '/index'
   end
 
@@ -38,17 +38,17 @@ class Main  < Sinatra::Application
     haml :index, :locals => {:current_name => session[:name], :items => Models::Item.all, :error => params[:error] }
   end
 
-  get "/:item/activate" do
+  post "/:item" do
     redirect '/login' unless session[:name]
     item = Models::Item.by_name(params[:item])
-    item.active = true
-    redirect back
-  end
+    if params[:action] == "Activate"
+      item.active = true
+    end
 
-  get "/:item/deactivate" do
-    redirect '/login' unless session[:name]
-    item = Models::Item.by_name(params[:item])
-    item.active = false
+    if params[:action] == "Deactivate"
+      item.active = false
+    end
+
     redirect back
   end
 

@@ -4,7 +4,7 @@
     %th Name
     %th Credits
   - for user in users
-    %tr
-      %td
+    %tr.list
+      %td.list
         %a{:href => url("/user/#{user.name}")} #{user.name}
-      %td #{user.credits}
+      %td.list #{user.credits}
