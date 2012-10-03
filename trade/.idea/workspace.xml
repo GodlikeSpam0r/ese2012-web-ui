@@ -31,7 +31,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="18" selection-start="730" selection-end="730" vertical-scroll-proportion="0.9128205">
+            <state line="62" column="11" selection-start="828" selection-end="828" vertical-scroll-proportion="2.39196">
               <folding />
             </state>
           </provider>
@@ -98,7 +98,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,16 +204,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -359,11 +359,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25757575" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2651515" sideWeight="0.684466" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5037879" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847896" sideWeight="0.4909091" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31553397" sideWeight="0.4909091" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -458,65 +458,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="31" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="50" column="31" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="760" selection-end="760" vertical-scroll-proportion="-11.115385">
-          <folding />
-        </state>
+        <state line="27" column="16" selection-start="760" selection-end="760" vertical-scroll-proportion="-11.115385" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/item.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.7846154">
-          <folding />
-        </state>
+        <state line="18" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.7846154" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="217" selection-end="222" vertical-scroll-proportion="-7.4615383">
-          <folding />
-        </state>
+        <state line="13" column="16" selection-start="217" selection-end="222" vertical-scroll-proportion="-7.4615383" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/main.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="215" selection-end="215" vertical-scroll-proportion="-0.043589745">
-          <folding />
-        </state>
+        <state line="11" column="23" selection-start="215" selection-end="215" vertical-scroll-proportion="-0.043589745" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="737" selection-end="737" vertical-scroll-proportion="0.6730769">
-          <folding />
-        </state>
+        <state line="25" column="20" selection-start="737" selection-end="737" vertical-scroll-proportion="0.6730769" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="180" selection-end="180" vertical-scroll-proportion="0.42032966">
-          <folding />
-        </state>
+        <state line="9" column="14" selection-start="180" selection-end="180" vertical-scroll-proportion="0.42032966" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="389" selection-end="389" vertical-scroll-proportion="0.7197802">
-          <folding />
-        </state>
+        <state line="21" column="43" selection-start="389" selection-end="389" vertical-scroll-proportion="0.7197802" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/add_item.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="14" selection-start="179" selection-end="179" vertical-scroll-proportion="0.37362638">
-          <folding />
-        </state>
+        <state line="8" column="14" selection-start="179" selection-end="179" vertical-scroll-proportion="0.37362638" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.rb">
@@ -528,7 +510,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="18" selection-start="730" selection-end="730" vertical-scroll-proportion="0.9128205">
+        <state line="62" column="11" selection-start="828" selection-end="828" vertical-scroll-proportion="2.39196">
           <folding />
         </state>
       </provider>

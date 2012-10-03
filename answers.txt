@@ -1,0 +1,5 @@
+1. Whenever the URL is changed, the controllers (Sinatra) are called. The controllers change the model if necessary, and then show a view (haml).
+
+2. Because you can access them throug the URL and therefore if you hit the back button of you browser, the change would be done again.
+
+3. In the view (haml)

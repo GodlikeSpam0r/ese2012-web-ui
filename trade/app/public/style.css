@@ -18,17 +18,17 @@ th {
     text-align: left;
 }
 
-.list{
+.list {
     border-top: dashed 1px #ccc;
 }
 
-#error{
+#error {
     margin-top: 5px;
-   background: #f66;
+    background: #f66;
     border: solid 1px #000;
 }
 
-#success{
+#success {
     margin-top: 55px;
     background: #8e8;
     border: solid 1px #000;
@@ -97,16 +97,17 @@ h2 {
     margin: 0px;
 }
 
-#button{
+#button {
     background: none;
     border: none;
     color: #23496B;
 }
 
-#button:hover{
+#button:hover {
     color: #aaa;
+    cursor: pointer;
 }
 
-.center{
+.center {
     text-align: center;
 }
